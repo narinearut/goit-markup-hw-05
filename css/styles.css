@@ -26,6 +26,7 @@ html {
     --secondary-text-color: rgba(117, 117, 117, 1);
     --accent-color: rgba(33, 150, 243, 1);
     --primary-bgc: rgba(47, 48, 58, 1);
+    --bgc-list-text:rgba(47, 48, 58, 0.8);
     --secondary-bgc: rgba(245, 244, 250, 1);
     --white-text: rgba(255, 255, 255, 1);
     --address-text: rgba(255, 255, 255, 0.6);
@@ -75,7 +76,7 @@ ul {
     display: block;
     text-decoration: none;
 
-    transition: box-shadow 300ms linear;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-link:hover,
@@ -147,7 +148,7 @@ header {
     padding-bottom: 25px;
     margin-right: 93px;
 
-    transition: color 300ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -188,7 +189,8 @@ header {
 
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: color 300ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 
@@ -220,7 +222,7 @@ header {
     padding-top: 32px;
     padding-bottom: 32px;
 
-    transition: color 300ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -363,7 +365,7 @@ header {
     border-radius: 4px;
     border: 1px solid transparent;
 
-    transition: color 300ms linear, background-color 300ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     cursor: pointer;
 }
@@ -448,6 +450,30 @@ header {
 .list .list-item+.list-item {
     margin-left: 30px;
 }
+.list-img {
+    position: relative;
+}
+.list-text{
+    position: absolute;
+bottom: 0%;
+
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: var(--white-text);
+        background-color: var(--bgc-list-text);
+        width:370px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+}
 
 .team {
     background-color: var(--secondary-bgc);
@@ -509,8 +535,8 @@ header {
     background-color: var(--white-text);
     border-radius: 50%;
 
-    transition: fill 300ms linear, 
-    background-color 300ms linear;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-site {
@@ -556,7 +582,7 @@ header {
     padding-bottom: 16px;
     padding-left: 32px;
 
-    transition: border 300ms linear;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -575,7 +601,7 @@ header {
 
 .icon-klient {
     fill: var(--primary-icon-color);
-    transition: fill 300ms linear;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -640,7 +666,7 @@ header {
     padding-left: 24px;
     height: 100%;
     transform: translateY(100%);
-    transition: transform 300ms linear;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: auto;
 
 }
@@ -720,7 +746,7 @@ transform: translateY(0);
     font-size: 14px;
     line-height: 1.71;
 
-    transition: color 300ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail:hover,
@@ -771,7 +797,7 @@ transform: translateY(0);
     background-color: var(--bgd-icon-footer);
     border-radius: 50%;
 
-    transition: background-color 300ms linear;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-footer {
@@ -809,7 +835,7 @@ transform: translateY(0);
     width: 100%;
     height: 100%;
     background-color: var(--backdrop);
-    transition: opacity 300ms linear, visibility 30ms linear;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -823,7 +849,7 @@ transform: translateY(0);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scaleY(1) rotate(0);
-        transition: transform 300ms linear;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal{
